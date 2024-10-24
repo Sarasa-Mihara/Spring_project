@@ -27,7 +27,7 @@ public class AnimalRepository {
 	
 	public AnimalData[] getAnimalDetail(int id) throws IOException {
 		
-		String url = "https://wsaz0e6z45.execute-api.ap-northeast-1.amazonaws.com/prod/animalsAPI?id=1";
+		String url = "https://wsaz0e6z45.execute-api.ap-northeast-1.amazonaws.com/prod/animalsAPI?id=" + id;
 		
 		RestTemplate rest = new RestTemplate();
 		ResponseEntity<String> response = rest.getForEntity(url, String.class);

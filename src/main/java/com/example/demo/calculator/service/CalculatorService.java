@@ -8,13 +8,13 @@ public class CalculatorService {
 		
 		int result = 0;
 		
-		if (operator.equals("+")) {
+		if ("+".equals(operator)) {
 			result = numOne + numTwo;
-		} else if (operator.equals("-")) {
+		} else if ("-".equals(operator)) {
 			result = numOne - numTwo;
-		} else if (operator.equals("*")) {
+		} else if ("*".equals(operator)) {
 			result = numOne * numTwo;
-		} else if (operator.equals("/")) {
+		} else if ("/".equals(operator)) {
 			if (numOne == 0 || numTwo == 0) {
 				throw new ArithmeticException("ゼロ除算はできません");
 			} else {
